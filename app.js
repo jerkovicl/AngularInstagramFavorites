@@ -1,18 +1,14 @@
-angular.module('ui.instagram', ['ngResource', 'ngRoute', 'mgcrea.ngStrap'])
-    .config(['$routeProvider', '$locationProvider',
-        function ($routeProvider, $locationProvider) {
-            $locationProvider.html5Mode(true);
+var app = angular.module('ui.instagram', []);
 
-            $routeProvider
-                .when('/', {
-                    templateUrl: 'views/home.html',
-                    controller: 'TestCtrl'
-                })
-                .when('/add', {
-                    templateUrl: 'views/user.html',
-                    controller: 'TestCtrl2'
-                })
-                .otherwise({
-                    redirectTo: '/'
-                });
-  }]);
+app.controller('MainCtrl', function ($scope) {
+    $scope.id = '19719473';
+});
+
+app.directive('ui-instagram', function () {
+    return {
+        restrict: 'AE',
+        compile: function (elem) {
+            elem.replaceWith(ui - instagram.toHTML(elem.html()));
+        }
+    }
+});
