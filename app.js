@@ -5,7 +5,7 @@ angular.module('ui.instagram', ['ngResource', 'ngRoute', 'mgcrea.ngStrap'])
 
             $routeProvider
                 .when('/', {
-                    templateUrl: 'views/index.html'
+                    templateUrl: 'views/home.html'
                 })
                 .when('/add', {
                     templateUrl: 'views/user.html'
