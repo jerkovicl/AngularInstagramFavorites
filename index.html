@@ -16,8 +16,10 @@
     <script src="js/custom/angular-resource.js"></script>
     <script src="js/custom/angular-strap.js"></script>
     <script src="js/custom/angular-strap.tpl.js"></script>
-    <!--Controller-->
+    <!--Controllers-->
     <script src="js/custom/navbar.js"></script>
+    <script src="controllers/main.js"></script>
+    <script src="controllers/add.js"></script>
     <!--Main script-->
     <script src="app.js"></script>
 
@@ -42,8 +44,7 @@
     </div>
     <div ng-view></div>
     <!--directive that includes the rendered template of current route-->
-    <ui-instagram user-id='8263704' client-id="8a607f8a109b4e04a831fe0309ceff0b"></ui-instagram>
-    <img ng-repeat="gram in grams" ng-attr-src="{{ gram.images.standard_resolution.url }}"></img>
+
 
 </body>
 

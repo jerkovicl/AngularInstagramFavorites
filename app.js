@@ -5,10 +5,12 @@ angular.module('ui.instagram', ['ngResource', 'ngRoute', 'mgcrea.ngStrap'])
 
             $routeProvider
                 .when('/', {
-                    templateUrl: 'views/home.html'
+                    templateUrl: 'views/home.html',
+                    controller: 'TestCtrl'
                 })
                 .when('/add', {
                     templateUrl: 'views/user.html'
+                    controller: 'TestCtrl2'
                 })
                 .otherwise({
                     redirectTo: '/'
