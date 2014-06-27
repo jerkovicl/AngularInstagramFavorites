@@ -9,7 +9,7 @@ angular.module('ui.instagram', ['ngResource', 'ngRoute', 'mgcrea.ngStrap'])
                     controller: 'TestCtrl'
                 })
                 .when('/add', {
-                    templateUrl: 'views/user.html'
+                    templateUrl: 'views/user.html',
                     controller: 'TestCtrl2'
                 })
                 .otherwise({
