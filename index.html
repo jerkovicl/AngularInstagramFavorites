@@ -7,17 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Angular -->
-    <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/angularjs/1.2.17/angular-csp.css">-->
     <!-- Libs -->
     <script src="js/custom/jquery-2.1.1.js"></script>
     <!-- version 1.2.19 -->
     <script src="js/custom/angular.min.js"></script>
-
-    <script src="js/custom/angular-route.js"></script>
-    <!--<script src="js/custom/angular-resource.js"></script>
-    <script src="js/custom/angular-strap.js"></script>
-    <script src="js/custom/angular-strap.tpl.js"></script>-->
     <!--Custom Directives-->
     <script src="js/custom/ui-instagram.js"></script>
 
@@ -33,15 +26,10 @@
 </head>
 
 <body>
-    <div ng-repeat="user in users">
-        <div ui-instagram user-id='user.userId' client-id="user.clientId"></div>
-        <!--        <div ui-instagram user-id='19719473' client-id="8a607f8a109b4e04a831fe0309ceff0b"></div>-->
+    <div ng-controller="demoCtrl">
+        <div ng-repeat="user in users">
+            {{user.id}}
+            <div ui-instagram user-id="user.id" client-id="user.clientId"></div>
+        </div>
     </div>
-    <!--<div ng-controller="Controller">
-        <ui-instagram user-id="8263704" client-id="8a607f8a109b4e04a831fe0309ceff0b"></ui-instagram>
-        <img ng-repeat="gram in grams" ng-attr-src="{{ gram.images.standard_resolution.url }}"></img>
-        <hr>
-        <ui-instagram user-id="19719473" client-id="8a607f8a109b4e04a831fe0309ceff0b"></ui-instagram>
-        <img ng-repeat="gram in grams" ng-attr-src="{{ gram.images.standard_resolution.url }}"></img>
-    </div>-->
 </body>
